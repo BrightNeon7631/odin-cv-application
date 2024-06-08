@@ -1,4 +1,4 @@
-# The Odin Project #19: CV Application
+# The Odin Project #18: CV Application
 
 The goal of this Odin Project assignment was to create a CV application.
 
@@ -6,7 +6,7 @@ I started and finished this project in June 2023.
 
 ## Assignment
 
-[The Odin Project - React - #19 CV Application](https://www.theodinproject.com/lessons/node-path-react-new-cv-application)
+[The Odin Project - React - #18 CV Application](https://www.theodinproject.com/lessons/node-path-react-new-cv-application)
 
 ## Technology
 
