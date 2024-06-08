@@ -1,0 +1,381 @@
+@font-face {
+  font-family: Cabin;
+  src: url(./assets/fonts/Cabin.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Cabin, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(49, 47, 47);
+}
+
+/* HEADER */
+header {
+  height: 5rem;
+  background-color: #16595f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.header--logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header--right {
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* FORMS */
+.forms--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.edit--general--info, 
+.edit--aboutme {
+  background-color: rgb(150, 142, 142);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  width: 75vw;
+  margin-top: 2rem;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.input-button {
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+button,
+.input-button {
+  background-color: #efefef;
+}
+
+button:hover,
+.input-button:hover {
+  background-color: #c2bfbf;
+}
+
+.edit--aboutme {
+  margin-top: 0;
+}
+
+.edit--inputs--top, 
+.edit--inputs--bottom {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit--inputs--top > input, 
+.edit--inputs--bottom > input {
+  flex: 1;
+}
+
+input {
+  border: none;
+  outline: none;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.edit--title {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.edit--experience--container, 
+.edit--education--container {
+  background-color: rgb(150, 142, 142);
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  width: 75vw;
+  min-height: 5rem;
+  position: relative;
+}
+
+.edit--experience--container > .edit--title, 
+.edit--education--container > .edit--title {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.edit--experience--element, 
+.edit--education--element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.edit--icon--add {
+  position: absolute;
+  top: 1.8rem;
+  right: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.edit--icon--add:hover,
+.header--right:hover {
+  color: #c2bfbf;
+}
+
+.edit--delete--button {
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit--general--info, 
+.edit--aboutme, 
+.edit--education--container, 
+.edit--experience--container {
+  max-width: 1000px;
+}
+
+.edit--skills {
+  margin-bottom: 2rem;
+}
+
+/* CV PREVIEW */
+.round--button {
+  font-size: 2.5rem;
+  color: white;
+  background-color: #16595f;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 10px 1rem auto;
+}
+
+.round--button:hover {
+  opacity: 80%;
+}
+
+.cv--container {
+  height: 100vh;
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.cv--left {
+  flex: 1;
+  background-color: #4eb2bb;
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  max-width: 35%;
+}
+
+.cv--left--photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.cv--left--photo > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.cv--left--aboutme {
+  color: white;
+  font-size: 1.1rem;
+  overflow-wrap: break-word;
+}
+
+.cv--left--title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv--left--contact {
+  color: white;
+}
+
+.cv--left--contact--element {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+.cv--left--contact--icon {
+  color: black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  min-width: 3.5rem;
+  min-height: 2rem;
+  padding: 5px;
+  margin-left: -1.5rem;
+}
+
+.cv--left--skills {
+  font-size: 1.2rem;
+  padding-bottom: 0.55rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cv--right {
+  flex: 2;
+  background-color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  overflow-wrap: break-word;
+}
+
+.cv--right--name {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #16595f;
+}
+
+.cv--right--title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: #16595f;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.cv--right--education--element,
+.cv--right--experience--element {
+  display: flex;
+  align-items: first baseline;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.cv--right--education--element--date,
+.cv--right--experience--element--date {
+  font-weight: 600;
+}
+
+.cv--right--education--element--info,
+.cv--right--experience--element--info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 370px;
+}
+
+.cv--right--education--element--info > div:first-of-type,
+.cv--right--experience--element--info > div:first-of-type {
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 800px) {
+  header {
+    font-size: 2.5rem;
+  }
+  
+  .edit--general--info, 
+  .edit--aboutme, 
+  .edit--education--container, 
+  .edit--experience--container {
+    width: 95vw;
+  }
+
+  .edit--general--info, 
+  .edit--aboutme {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .edit--education--container,
+  .edit--experience--container {
+    padding: 1.5rem 0.8rem 0 0.8rem;
+  }
+
+  .edit--inputs--top, 
+  .edit--inputs--bottom {
+    flex-direction: column;
+  }
+
+  .cv--container {
+    flex-direction: column;
+  }
+
+  .cv--left {
+    max-width: 100%;
+  }
+
+  .cv--left--photo {
+    margin: auto;
+  }
+
+  .cv--right--name {
+    font-size: 3rem;
+  }
+}
